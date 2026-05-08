@@ -73,6 +73,13 @@ function ScannerPanel({ onSelectStock }) {
                     <div className="flex items-center gap-2">
                       <span className="text-lg font-bold text-white">{c.ticker}</span>
                       <span className="text-sm text-gray-500">{c.name}</span>
+                      <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${
+                        c.signal_type === 'accumulation'
+                          ? 'bg-[#b026ff]/15 text-[#d580ff] border border-[#b026ff]/30'
+                          : 'bg-[#00ff88]/15 text-[#00ff88] border border-[#00ff88]/30'
+                      }`}>
+                        {c.signal_label || '🔥 顺势追涨'}
+                      </span>
                     </div>
                     <div className="flex flex-wrap gap-2 mt-1">
                       {c.reasons.map((r, j) => (
