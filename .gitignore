@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+*.pyc
+.eggs/
+*.egg-info/
+
+# Environment variables (contains API keys!)
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+
+# TradingAgents cache & logs
+.tradingagents/
+
+# Cloned upstream repo (we only need our custom files)
+TradingAgents/tradingagents/
+TradingAgents/.git/
+TradingAgents/assets/
+TradingAgents/tests/
+TradingAgents/scripts/
+TradingAgents/cli/
