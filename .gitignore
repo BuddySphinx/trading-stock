@@ -24,10 +24,24 @@ build/
 # TradingAgents cache & logs
 .tradingagents/
 
-# Cloned upstream repo (we only need our custom files)
+# Upstream TradingAgents internals (we keep our custom files)
 TradingAgents/tradingagents/
 TradingAgents/.git/
 TradingAgents/assets/
 TradingAgents/tests/
 TradingAgents/scripts/
 TradingAgents/cli/
+TradingAgents/uv.lock
+TradingAgents/test.py
+
+# Explicitly track our custom backend files
+!TradingAgents/app.py
+!TradingAgents/scanner.py
+!TradingAgents/.env.example
+!TradingAgents/main.py
+!TradingAgents/requirements.txt
+!TradingAgents/pyproject.toml
+!TradingAgents/README.md
+!TradingAgents/LICENSE
+!TradingAgents/Dockerfile
+!TradingAgents/docker-compose.yml
